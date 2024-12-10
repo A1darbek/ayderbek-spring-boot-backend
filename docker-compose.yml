@@ -1,0 +1,10 @@
+services:
+ postgres-laptop:
+  image: postgres:15-alpine
+  container_name: postgres-laptop
+  environment:
+    POSTGRES_USER: "ayderbek"
+    POSTGRES_PASSWORD: "password"
+    POSTGRES_DB: "laptop-sales"
+  ports:
+    - "5432:5432"
